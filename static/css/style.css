@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+
+*{
+    font-family: "Questrial", serif;
+    padding: 0%;
+    margin: 0;
+}
+
+
+/* Navv */
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 34px;
+    color: white;
+    /* z-index: 5; */
+}
+
+.nav-items ul{
+    display: flex;
+    justify-content: space-evenly;
+    /* text-decoration: none; */
+    list-style: none;
+}
+
+.nav-items li{
+    margin: 0 8px;
+}
+
+
+.home{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url("../images/lscape4.jpg");
+    /* width: 100vw; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 30%, rgba(0,0,0,0.6) 80%);
+    z-index: -1;
+}
+
+/* .home::after {
+    left: auto;
+    right: 0;
+} */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 4px 6em;
+    padding: 0;
+    /* z-index: 5; */
+}
+
+
+.head-txt{
+    text-align: start;
+    color: white;
+    margin: 8em;
+}
+.head-txt h2{
+    color: cyan;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: "Poppins", serif;
+    /* margin: 0 auto; */
+    /* letter-spacing: 0.4cap; */
+    text-shadow: 1px 1px 8px  black;
+}
+
+.head-txt p{
+    text-align: start;
+    /* margin: 0 auto; */
+    width: 30em;
+    text-shadow: 1px 1px 5px black;
+}
+
+.btm-txt-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-card{
+    color: white;
+    display: flex;
+    padding: 6px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    margin-top: 7em;
+
+}
+
+.sub-card-txt2{
+    /* padding: 6px; */
+    width: 20em;
+}
